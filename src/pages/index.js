@@ -1,149 +1,121 @@
 import * as React from "react"
+import { Link } from "gatsby"
+import imageStyles from "./image.module.css"
+import Header from "./components/header.js"
+import projectBackground from "./project.module.css"
 
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: "96px",
+  padding: "10%",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontSize: "18px",
 }
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+const headerStyles = {
+  textDecoration: "underline",
+  textDecorationColor: "#ffa500",
 }
-const headingAccentStyles = {
-  color: "#663399",
+const subheaderStyles = {
+  textDecoration: "underline",
+  textDecorationColor: "#ffa500",
+  paddingTop: "50px",
 }
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: "300",
-  fontSize: "24px",
-  maxWidth: "560px",
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
+const projectStyles = {
+  textDecoration: "none",
+  color: "black",
   fontSize: "16px",
-  verticalAlign: "5%",
+  marginLeft: "5%",
+  marginRight: "5%",
+  borderStyle: "solid",
+  borderColor: "#ffa500",
+} 
+const projectText = {
+  marginLeft: "2%",
+  marginRight: "2%",
 }
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: "14px",
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#000000",
-  },
+//data
+const projects = [
+    {
+    'title': 'Esthetic',
+    'link': "/projects/esthetic",
+    'date': 'January 2021',
+    'description': "A virtual closet mobile app. I'm working with a software engineer, Steve Docto, while taking on PM type responsibilities in the beginning, conducting user interviews to determine an idea and creating mockup screens. Now I'm working on ML algorithms to determine type of clothing and color."
+    },
+    {
+      'title': 'Song Tags: An Alternative to Playlists',
+      'link': "/projects/song-tags",
+      'date' : 'September 2020',
+      'description': "After lots of frustration in efficiently organizing my music, I conducted 10 user interviews to see how my friends organized playlists. I created four personas based off the data and propose a system of tagging songs that would benefit almost all music listeners."
+    },
+    {
+      'title': "What Could 'Defund the Police' Look Like?",
+      'link': "/projects/defund-the-police",
+      'date': 'August 2020',
+      'description': "The George Floyd Protests brought up a lot of rhetoric regarding defunding or even abolishing the police. I had a hard time imagining what that would look like as police is so ingrained in our society. So I analyzed what we really pay our police to do and explored where that money can be better spent."
+    },
+    {
+      'title': "COVID's Impact on Mental Health",
+      'link': "/projects/covid-mental-health",
+      'date': 'June 2020',
+      'description': "For 2020's DataFest, I worked in a team of 5 peers to explore the effects of COVID. Using survey data, we analyzed the biggest factors in a person's mental health during quarantine. We then created this webapp for people to put in their information and get a mental health risk score."
+    }
 ]
 
-// markup
 const IndexPage = () => {
   return (
+    <Header>
     <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
+      <div id='opener' style={{paddingBottom: '150px'}}>
+        <h1 style={headerStyles}>
+          Hi. I'm Johnson.
+        </h1>
+        <h1 style={headerStyles}>
+          你好。我是庄森。
+        </h1>
+        <h1 style={headerStyles}>
+          こんにちは。僕はジョンソンです。
+        </h1>
+        <div id='contact' style={imageStyles}>
+          <a href="https://github.com/jlin99/"> 
+            <img class="image-top" src={'github1.png'} alt="Github"></img>
+            <img class="image-bottom" src={'github2.png'} alt="Github"></img>
           </a>
-        </li>
-        {links.map(link => (
-          <li style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+          <a href="https://www.linkedin.com/in/lin-johnson/">
+            <img class="linkedin-img" src={'linkedin1.jpg'} alt="LinkedIn"></img>
+            <img class="image-bottom" src={'linkedin2.jpg'} alt="LinkedIn"></img>
+          </a>
+          <a href="mailto:johnsonlin@vassar.edu">
+            <img class="image-top" src={'mail1.png'} alt="Email"></img>
+            <img class="image-bottom" src={'mail2.png'} alt="Email"></img>
+          </a>
+        </div>
+      </div>
+      <h2 style={subheaderStyles}>
+        About Me
+      </h2>
+      <p>
+        I'm currently a senior at Vassar College. I'm a math major with a focus on statistics. I'm a self taught coder with a deep interest in ML/AI. I previously interned as a Product Manager at Midgame, a small startup dedicated to bringing people closer together. I love making meaningful connections and having a tangible impact. My interests include fashion, video games, ultimate frisbee, and music. 
+      </p>
+      <p>
+        Any of the above interest you? Click on a sentence to read a little more. 
+      </p>
+      <h2 style={subheaderStyles}>
+        Projects
+      </h2>
+      <p>
+        Check out some of the cool things I've done in my free time: 
+      </p>
+      {projects.map(project => (
+        <Link to={project.link} style = {projectStyles} className = {projectBackground.projectDiv}>
+        <div class='project'>
+          <h3 style = {projectText}>{project.title}</h3>
+          <h5 style = {projectText}>{project.date}</h5>
+          <p style = {projectText}>{project.description}</p>
+        </div>
+        </Link>
+      ))}
     </main>
+    </Header>
   )
 }
 

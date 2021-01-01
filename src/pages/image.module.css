@@ -1,0 +1,23 @@
+a {
+    margin: 10px;
+    float: right;
+}
+a img:last-child{
+    display: none;
+}
+a:hover img:last-child{
+    display: inline-block;
+}
+a:hover img:first-child{
+    display: none;
+}
+img {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 50px;
+    align-content:center;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
