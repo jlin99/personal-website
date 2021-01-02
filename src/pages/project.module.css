@@ -1,8 +1,12 @@
 .projectDiv {
     background: linear-gradient(to left, white 50%, #ffa500 50%) right;
-    background-size: 200%;
+    background-size: 210%;
     transition: .25s ease-out;
 }
 .projectDiv:hover {
-background-position: left;
+    background-position: left;
+}
+.projectDiv:hover .projectText{
+    color: white;
+    transition-delay: 0.12s;
 }

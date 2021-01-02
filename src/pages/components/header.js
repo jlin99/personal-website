@@ -13,7 +13,7 @@ const ListLink = props => (
     <Link to={props.to} style={headerStyle}>{props.children}</Link>
   </li>
 )
-export default function Header({ children }) {
+export default function Header() {
   return (
     <div style={{ margin: `-2rem auto`, padding: `0 1rem` }}>
       <title>Johnson Lin</title>
@@ -23,7 +23,6 @@ export default function Header({ children }) {
           <ListLink to="/creative/"><p className={linkStyle.link} style={{ color:'#ffa500'}}>Creative Corner</p></ListLink>
         </ul>
       </header>
-      {children}
     </div>
   )
 }
