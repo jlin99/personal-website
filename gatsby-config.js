@@ -2,5 +2,12 @@ module.exports = {
   siteMetadata: {
     title: "Personal",
   },
-  plugins: [],
+  plugins: [{
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path: `./src/projects`,
+      name: `projects`,
+    },
+  },
+  `gatsby-transformer-remark`,],
 };

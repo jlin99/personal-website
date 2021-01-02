@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import linkStyle from './link_one.module.css'
+import linkStyle from './link.module.css'
 
 const headerStyle = {
     textDecoration: 'none',

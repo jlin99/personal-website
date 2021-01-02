@@ -23,13 +23,14 @@ const subheaderStyles = {
 const projectStyles = {
   textDecoration: "none",
   color: "black",
-  fontSize: "16px",
+  fontSize: "17px",
   marginLeft: "5%",
   marginRight: "5%",
   borderStyle: "solid",
   borderColor: "#ffa500",
 } 
 const projectText = {
+  margin: "1%",
   marginLeft: "2%",
   marginRight: "2%",
 }
@@ -105,6 +106,7 @@ const IndexPage = () => {
       <p>
         Check out some of the cool things I've done in my free time: 
       </p>
+      <div id='projects'>
       {projects.map(project => (
         <Link to={project.link} style = {projectStyles} className = {projectBackground.projectDiv}>
         <div class='project'>
@@ -114,6 +116,7 @@ const IndexPage = () => {
         </div>
         </Link>
       ))}
+      </div>
     </main>
     </Header>
   )
