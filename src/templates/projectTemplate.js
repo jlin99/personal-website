@@ -4,9 +4,10 @@ import ProjectHeader from "./components/projectHeader.js"
 
 const pageStyles = {
   color: "#232129",
-  padding: "2% 0 10% 10%",
+  padding: "2% 11% 0 11%",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   fontSize: "18px",
+  lineHeight: "1.4",
 }
 const headerStyles = {
   textDecoration: "underline",
@@ -32,6 +33,10 @@ export default function Template({
             className="project-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+          <ProjectHeader />
+        </div>
+        <div>
+          
         </div>
       </div>
       </main>
