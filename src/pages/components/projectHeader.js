@@ -1,5 +1,4 @@
 import React from "react"
-import { navigate } from "gatsby"
 import linkStyle from "./link.module.css"
 
 const backButton = {
@@ -16,9 +15,9 @@ export default function ProjectHeader() {
         <div>
             <title>Johnson Lin</title>
             <div>
-                <div role = "button" tabIndex = {0} onClick={() => { navigate(-1) }} onKeyDown={() => { navigate(-1) }} style = {backButton}>
+                <a href="https://johnsonl.in/#projects" style={backButton}>
                     <p className = {linkStyle.link}>&#8249; Back</p>
-                </div>
+                </a>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import ProjectHeader from "./components/projectHeader.js"
+import Scroll from "./components/scroll.js"
 
 const pageStyles = {
   color: "#232129",
@@ -24,6 +25,7 @@ export default function Template({
       <div className="project-post-container">
         <div>
           <ProjectHeader />
+          <Scroll showBelow={200} />
         </div>
         <br></br>
         <div className="project-post" style = {{ marginTop: "70px"}}>
@@ -33,7 +35,6 @@ export default function Template({
             className="project-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          <ProjectHeader />
         </div>
         <div>
           

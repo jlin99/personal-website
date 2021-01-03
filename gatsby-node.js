@@ -1,6 +1,6 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
-    const projectPostTemplate = require.resolve(`./src/templates/projectTemplate.js`)
+    const projectPostTemplate = require.resolve(`./src/pages/projectTemplate.js`)
     const result = await graphql(`
       {
         allMarkdownRemark(
