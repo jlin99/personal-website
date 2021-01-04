@@ -1,0 +1,18 @@
+.creativeTitle {
+    color: white;
+    font-size: 36px; 
+    margin: 1.5%;
+    padding: 1.5%;
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px dashed white;
+    border-left: 2px solid white;
+    border-right: 2px dashed white;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    transition: border-top-color 2s ease-out, border-right-color 2s ease-out;
+  }
+  .creativeTitle:hover {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }

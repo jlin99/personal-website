@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import ProjectHeader from "./components/projectHeader.js"
 import Scroll from "./components/scroll.js"
+import Footer from "./components/footer.js"
 
 const pageStyles = {
   color: "#232129",
@@ -39,6 +40,9 @@ export default function Template({
         <div>
           
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
       </main>
     )
