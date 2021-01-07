@@ -1,0 +1,93 @@
+.flexbox{ 
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+}
+.column{
+    flex: 1 1;
+}
+.clothes{
+    display: none;
+
+    background-color: #6A7FDB;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    top: 0;
+    left: 0;
+    color: white;  
+    z-index: 1; 
+}
+.fashionShow{
+    display: none;
+
+    background-color: #6A7FDB;
+    position: absolute;
+    height: 500px;
+    width: 800px;
+    top: 30px;
+    left: 300px;
+    color: white;  
+    z-index: 1; 
+}
+.portrait {
+    display: none;
+
+    background-color: #6A7FDB;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    top: 0;
+    left: 100px;
+    color: white;  
+    z-index: 1; 
+}
+.beats {
+    display: none;
+
+    background-color: #6A7FDB;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    top: 30px;
+    left: 100px;
+    color: white;  
+    z-index: 1; 
+}
+.clothes, .fashionShow, .portrait, .beats p {
+    margin: 5%;
+    text-align: center;
+}
+.clothesLink:hover > .clothes{
+    display: inline;
+}
+.fashionShowLink:hover > .fashionShow{
+    display: inline;
+}
+.portraitLink:hover > .portrait{
+    display: inline;
+}
+.beatsLink:hover > .beats{
+    display: inline;
+}
+.text {
+    font-size: 36px;
+    text-align: right;
+    margin: 2%;
+}
+
+.defaultText{
+    font-size: 56px;
+    margin: 2%;
+    text-decoration: underline;
+    text-decoration-color: #ffa500;
+}
+.linkText{
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+.footer{
+    flex: 100%;
+    order: 3;
+}

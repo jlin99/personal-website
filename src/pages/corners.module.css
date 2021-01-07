@@ -10,7 +10,7 @@
     border-right: 2px dashed white;
     border-bottom: 2px solid white;
     text-decoration: none;
-    transition: border-top-color 2s ease-out, border-right-color 2s ease-out;
+    transition: border-top-color 1.5s ease-out, border-right-color 1.5s ease-out;
   }
   .creativeTitle:hover {
     border-top-color: transparent;

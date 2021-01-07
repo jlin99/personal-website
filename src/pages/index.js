@@ -56,7 +56,9 @@ const creativeText = {
   textAlign: "center",
   lineHeight: "1.4",
 }
-
+const hrStyle = {
+  width: "50%",
+}
 
 //data
 const projects = [
@@ -123,7 +125,7 @@ const IndexPage = () => {
         About Me
       </h2>
       <p>
-        I'm Johnson Lin, a senior at Vassar College. I'm a math major with a focus on statistics. I'm a self-taught coder with a deep interest in ML/AI. I previously interned as a Product Manager at Midgame, a small startup dedicated to bringing people closer together. I love making meaningful connections and having a tangible impact. My interests include fashion, video games, ultimate frisbee, and music. 
+        I'm currently a senior at Vassar College. I'm a math major with a focus on statistics. I'm a self-taught coder with a deep interest in ML/AI. I previously interned as a Product Manager at Midgame, a small startup dedicated to bringing people closer together. I love making meaningful connections and having a tangible impact. My interests include fashion, video games, ultimate frisbee, and music. 
       </p>
       <Accordion allowMultipleExpanded allowZeroExpanded>
           <AccordionItem>
@@ -137,7 +139,7 @@ const IndexPage = () => {
                   I had data science as my target career goal for about the past two years. I loved my Probability class which led me to take more statistics classes and when I took Statistical Learning last year while I was abroad at Peking University, I realized how tangible and accessible Machine Learning was to me. While I always thought Machine Learning was cool, that class changed ML/AI from some black box to something I actually understood. As someone who learned Python by themselves in high school and as a current math major, it's a perfect fit for my skill set. And it's clear to me that data is going to be one of the biggest driving forces for our future and I want to be a part of that. 
                 </p>
                 <p>
-                  But after my internship at Midgame, I realized I was interested in beyond just that. I really enjoyed the aspect of identifying problems and designing solutions. It was exciting having the opportunity to think big and imagine a near future where my ideas might come to fruition. I loved talking to users and getting them to open up about some of their frustrations with a workflow. It's also why I was such an active student leader, serving as a Student Fellow (Vassar's version of an RA) and on multiple executive boards. It was extremely rewarding building a community and seeing that you made a positive impact on the people around you. I will always remember a member of Asian Students' Alliance (ASA) telling me that the event I had planned out was the first time they felt like they were apart of Vassar's Asian community and that they were very grateful for that.
+                  But after my internship at Midgame, I realized I was interested in beyond just that. I really enjoyed the aspect of identifying problems and designing solutions. It was exciting having the opportunity to think big and imagine a near future where my ideas might come to fruition. I loved talking to users and getting them to open up about some of their frustrations with a workflow. It's also why I was such an active student leader, serving as a Student Fellow (Vassar's version of an RA) and on multiple executive boards. It was extremely rewarding building a community and seeing that I made a positive impact on the people around you. I will always remember a member of Asian Students' Alliance (ASA) telling me that the event I had planned out was the first time they felt like they were a part of Vassar's Asian community and that they were very grateful for that.
                 </p>
               <AccordionItem>
                 <AccordionItemHeading>
@@ -165,6 +167,9 @@ const IndexPage = () => {
                     <p>
                       I was a pretty awful student. I barely paid attention in my classes. I almost never took notes. I didn't even do my own homework for the first two years of high school. It's a miracle that I even graduated high school. I was just tired all the time. Which likely led to my unhealthy habit of drinking energy drinks all the time. But energy drinks was also the bait I took on hackathons. Two of my best friends started attending hackathons and they told me that there's free Monsters and that's what convinced me to attend my first hackathon in 10th grade. While I was there, I figured I might as well learn to code. I taught myself Python. I continued to attend hackathons and even organized a few with my friends. And it was at these hackathons where my friends saw me fall asleep for the first time and they would joke about how loud I snore. I distinctly remember at a HackRU, I had fallen asleep, and apparently people passing by came to check on me and make sure I was okay because my snoring was alarming to them, I guess. After several comments of my extremely loud snoring, a few times of falling asleep at the wheel, and a well timed Reddit post about sleep apnea, I decided to go to a sleep doctor towards the end of my senior year. 
                     </p>
+                    <br></br>
+                    <hr style = {hrStyle}></hr>
+                    <br></br>
                     <p>
                       It turns out I had severe sleep apnea. That's why I snored really loud and why I apparently sound like I'm dying in my sleep. I was super lucky to have been diagnosed early on. Aside from the long term problems untreated sleep apnea can cause, I'm also so glad to be able to sleep well. No longer do I sleep for 10+ hours and still feel sleepy in the middle of the day. After about a month of adjusting to sleeping with a CPAP machine, I began college with a fresh start, brimming with energy. 
                     </p>
@@ -177,6 +182,9 @@ const IndexPage = () => {
                     <p>
                       I was really bummed out at the time. I had planned my entire year banking on studying abroad in Japan. My flight ticket back to America was a full week after Vassar's spring semester because I was going to spend Chinese New Year with my dad's side of the family for once. Luckily, I had been taking the maximum amount of credits every semester. I decided to take the semester off since I could still graduate on time. I returned home at the end of January, right at the height of the COVID pandemic in China. I still distinctly remember landing in America and thinking I'm finally safe.
                     </p>
+                    <br></br>
+                    <hr style={hrStyle}></hr>
+                    <br></br>
                     <p>
                       It's funny how it works out. My spring semester in Japan would have been cancelled anyways with the state the world was in by the end of March. But because I took the semester off, I was searching for jobs and internships. And I was blessed with an opportunity at Midgame, where I discovered what Product Management even was for the first time. While graduating during a pandemic is obviously not ideal, I'm still amazed by how things have really worked out for me.
                     </p>
