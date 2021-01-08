@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: "Personal",
@@ -21,6 +25,23 @@ module.exports = {
         }
       ]
     }
+  },
+  {
+    resolve: 'gatsby-source-cloudinary',
+    options: {
+      cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+      apiKey: process.env.CLOUDINARY_API_KEY,
+      apiSecret: process.env.CLOUDINARY_API_SECRET,
+      resourceType: 'image',
+      prefix: 'fashionshowGallery/'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'images',
+      path: path.join(__dirname, 'src', 'images'),
+    },
   },
   "gatsby-plugin-sharp",
   "gatsby-transformer-sharp",

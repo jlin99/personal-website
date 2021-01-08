@@ -4,6 +4,9 @@ import Footer from "./components/footer.js"
 import sections from "./creativeSections.module.css"
 import invisibleText from "./invisible.module.css"
 import { Link } from "gatsby"
+import portraitThumb1 from "./thumbnails/portraitThumbnail1.png"
+import portraitThumb2 from "./thumbnails/portraitThumbnail2.png"
+import fashionThumb from "./thumbnails/fashionShowThumbnail.jpg"
 
 const mainStyle = {
     color: "#232129",
@@ -16,6 +19,16 @@ const mainStyle = {
 }
 const linkStyle = {
     color: "#ffa500",
+}
+const portraitStyle = {
+    width: '48%',
+    height: 'auto',
+    margin: '0.5%',
+}
+const fashionStyle = {
+    width: '96%',
+    height: 'auto',
+    margin: '0.5%',
 }
 
 const CreativePage = () => {
@@ -43,13 +56,14 @@ const CreativePage = () => {
                         <p>Gallery coming soon.</p>
                     </div></Link> I've even had the opportunity to design my own <Link to="/fashion-show/" style={linkStyle} className={sections.fashionShowLink}><p className={sections.linkText}>fashion show.</p>
                     <div className = {sections.fashionShow}>
-                        <p>Fashion Show goes here. </p>
+                        <img src={fashionThumb} alt="ASA Fashion Show" style={fashionStyle}/>
                     </div></Link>
                 </p>
                 <p className = {sections.text}>
                     I've written <Link to="/portrait/" style={linkStyle} className={sections.portraitLink}><p className={sections.linkText}>articles</p>
                     <div className = {sections.portrait}>
-                        <p>Portrait goes here. </p>
+                            <img src={portraitThumb1} alt="Portrait Articles" style={portraitStyle} />
+                            <img src={portraitThumb2} alt=""style={portraitStyle} />
                     </div> </Link>
                      about the relationship between Chinese takeout and Chinese Americans. 
                 </p> 

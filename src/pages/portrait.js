@@ -1,19 +1,16 @@
 import * as React from "react"
 import CreativeHeader from "./components/creativeHeader.js"
 import Footer from "./components/footer.js"
-
+import StyledFullBackground from './components/backgroundSection.js'
 
 const mainStyle = {
     color: "#232129",
-    paddingLeft: "11%",
-    paddingRight: "11%",
-    paddingTop: "10%",
+    paddingLeft: "12%",
+    paddingRight: "13%",
+    paddingTop: "5%",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
     fontSize: "18px",
     lineHeight: "1.5",
-    backgroundImage: "portraitBackground.png",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
 }
 const headerStyle = {
     color: "#ffa500",
@@ -21,7 +18,6 @@ const headerStyle = {
 }
 const subheaderStyle = {
     color: "#ffa500",
-    textDecoration: "underline",
     paddingTop: "3%",   
 }
 const sideNote = {
@@ -34,10 +30,14 @@ const portraitPage = () => {
         <div>
             <CreativeHeader />
         </div>
+        <StyledFullBackground>
         <div style = {mainStyle}>
             <h1 style={headerStyle}>Portrait Articles</h1>
             <p>
                 Below are two articles I've written for Portrait, Vassar's Asian/Asian American magazine. The first, titled "You Are What You Eat", was featured in Portrait's very first release in Fall 2018. The follow up, "On Board the Panda Express", was written for Portrait's latest release, Fall 2020. If you are interested in seeing more from Portrait, you can read the issues <a href="https://issuu.com/vcportrait/docs">here.</a>
+            </p>
+            <p>
+                Credits to Am Chunnananda and Ceci Villaseñor for creating the designs for the first and second article respectively.
             </p>
             <h2 style={subheaderStyle}>
                 You Are What You Eat
@@ -120,7 +120,7 @@ const portraitPage = () => {
                 Note: A few days after this essay was written, the Panda Express CEO stated that they had no plans to enter China and that the store that was reportedly opened is someone impersonating the brand.
             </p>
         </div>
-
+        </StyledFullBackground>
         <div>
                 <Footer />
             </div>
