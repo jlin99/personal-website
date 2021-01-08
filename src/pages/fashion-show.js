@@ -4,7 +4,7 @@ import Footer from "./components/footer.js"
 import ImageGallery from "./components/fashionshowGallery.js"
 import Speech from "./thumbnails/speech.jpg"
 import ActionShot from "./thumbnails/actionShot.jpg"
-import fullModel from "./thumbnails/fullModels.JPG"
+import fullModel from "./thumbnails/fullModels.jpg"
 
 const mainStyle = {
     color: "#232129",
