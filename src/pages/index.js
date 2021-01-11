@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState} from "react"
 import { Link } from "gatsby"
 import imageStyles from "./image.module.css"
 import Header from "./components/header.js"
@@ -14,6 +14,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import './accordion.css';
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 // styles
 const pageStyles = {
@@ -89,6 +90,10 @@ const projects = [
 ]
 
 const IndexPage = () => {
+  const [showMsg, setShowMsg] = useState(false)
+  const toggleClick = () => {
+    setShowMsg(!showMsg)
+  }
     return (
     <main>
     <div>
@@ -104,6 +109,7 @@ const IndexPage = () => {
         </h1>
         <h1 style={headerStyles}>
           こんにちは。僕はジョンソンです。
+        </h1>
           <div id='contact'>
           <a href="https://github.com/jlin99/" className = {imageStyles.socialmedia}> 
             <img class="image-top" src={'github1.png'} alt="Github"></img>
@@ -113,12 +119,23 @@ const IndexPage = () => {
             <img class="linkedin-img" src={'linkedin1.jpg'} alt="LinkedIn"></img>
             <img class="image-bottom" src={'linkedin2.jpg'} alt="LinkedIn"></img>
           </a>
-          <a href="mailto:johnsonlin@vassar.edu" className = {imageStyles.socialmedia}>
+          <CopyToClipboard text={"johnsonlin@vassar.edu"} onCopy={toggleClick}>
+          <a className = {imageStyles.socialmedia}>
             <img class="image-top" src={'mail1.png'} alt="Email"></img>
             <img class="image-bottom" src={'mail2.png'} alt="Email"></img>
           </a>
-        </div>
-        </h1>
+          </CopyToClipboard>
+          <br></br>
+          <p style={{
+            display: showMsg ? 'block' : 'none',
+            textAlign: "right",
+            fontSize: "14px",
+            fontStyle: "italic",
+            textDecorationColor: "black",
+            color: "#ffa500",
+            marginTop: "50px"
+          }}>Email Copied.</p>
+          </div>
       </div>
       <div>
       <h2 style={subheaderStyles}>
