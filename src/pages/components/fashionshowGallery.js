@@ -3,15 +3,16 @@ import './gallery.css'
 import {useStaticQuery, graphql} from 'gatsby'
 
 const ImageGallery = () => {
-    const data = useStaticQuery(graphql`query CloudinaryImage {
-            allCloudinaryMedia {
-              edges {
-                node {
-                  secure_url
+    const data = useStaticQuery(graphql`
+            query CloudinaryImage {
+                allCloudinaryMedia {
+                    edges {
+                        node {
+                            secure_url
+                        }
+                    }
                 }
-              }
-            }
-          }`
+            }`
     )
     const clImages = data.allCloudinaryMedia.edges
     return (

@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 import portraitThumb1 from "./thumbnails/portraitThumbnail1.png"
 import portraitThumb2 from "./thumbnails/portraitThumbnail2.png"
 import fashionThumb from "./thumbnails/fashionShowThumbnail.jpg"
+import clothesThumb from "./thumbnails/fashion.jpeg"
 
 const mainStyle = {
     color: "#232129",
@@ -52,9 +53,9 @@ const CreativePage = () => {
             </div>
             <div className = {sections.column}>
                 <p className = {sections.text}>
-                    I like to make <Link to="/clothes/" style={linkStyle} className={sections.clothesLink}> <p className={sections.linkText}>clothes.</p> <div className = {sections.clothes}>
-                        <p>Gallery coming soon.</p>
-                    </div></Link> I've even had the opportunity to design my own <Link to="/fashion-show/" style={linkStyle} className={sections.fashionShowLink}><p className={sections.linkText}>fashion show.</p>
+                    <Link to="/clothes/" style={linkStyle} className={sections.clothesLink}> <p className={sections.linkText}>Fashion</p> <div className = {sections.clothes}>
+                        <img src={clothesThumb} alt="Custom Clothes & Fitpics" style= {fashionStyle}/>
+                    </div></Link> is my biggest hobby. I like to make clothes and take pics sometimes. I've even had the opportunity to design my own <Link to="/fashion-show/" style={linkStyle} className={sections.fashionShowLink}><p className={sections.linkText}>fashion show.</p>
                     <div className = {sections.fashionShow}>
                         <img src={fashionThumb} alt="ASA Fashion Show" style={fashionStyle}/>
                     </div></Link>

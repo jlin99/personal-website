@@ -33,7 +33,8 @@ module.exports = {
       apiKey: process.env.CLOUDINARY_API_KEY,
       apiSecret: process.env.CLOUDINARY_API_SECRET,
       resourceType: 'image',
-      prefix: 'fashionshowGallery/'
+      prefix: 'fashionshowGallery/',
+      maxResults: 25
     }
   },
   {
@@ -45,5 +46,12 @@ module.exports = {
   },
   "gatsby-plugin-sharp",
   "gatsby-transformer-sharp",
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'gallery',
+      path: path.join(__dirname, 'src', 'images', 'gallery'),
+    }
+  },
   ],
 }; 

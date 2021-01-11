@@ -9,14 +9,15 @@
 .clothes{
     display: none;
 
-    background-color: #6A7FDB;
+    background-color: white;
     position: absolute;
-    height: 500px;
-    width: 1000px;
+    height: auto;
+    width: 750px;
     top: 0;
     left: 0;
     color: white;  
     z-index: 1; 
+    border: solid 3px #6A7FDB;
 }
 .fashionShow{
     display: none;

@@ -2,11 +2,12 @@ import * as React from "react"
 import CreativeHeader from "./components/creativeHeader.js"
 import Footer from "./components/footer.js"
 import StyledFullBackground from './components/backgroundSection.js'
+import CeciFullBackground from './components/backgroundSection2.js'
 
 const mainStyle = {
     color: "#232129",
-    paddingLeft: "12%",
-    paddingRight: "13%",
+    paddingLeft: "16%",
+    paddingRight: "20%",
     paddingTop: "5%",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
     fontSize: "18px",
@@ -66,6 +67,10 @@ const portraitPage = () => {
             <p>
                 But he changed the dish to suit an American palate. Instead of the spicy Hunan cuisine the dish resembles, the Americanized General Tso’s Chicken is too sweet, its spicy origins buried underneath layers of sugar. The traditional Chinese dish has lost its roots but it is still distinctly Chinese. Few Chinese locals have heard of General Tso’s Chicken. But in America, General Tso’s Chicken is distinctly Chinese food. Chinese Americans are put in a similar dilemma. We are disconnected from our roots. We are always foreign. In America, we are Chinese, but in China, we are American.
             </p>
+        </div>
+        </StyledFullBackground>
+        <CeciFullBackground>
+        <div style={mainStyle}>
             <h2 style={subheaderStyle}>Aboard the Panda Express</h2>
             <p>
                 Two and a half years ago, I wrote a final essay relating my Chinese American identity to Chinese takeout cuisine. A shortened version was adapted for Portrait’s first issue, titled “You Are What You Eat.” In the essay, I talk about the history of Chinese takeout cuisine, how the food changed to meet American standards, resulting in a food that is neither Chinese nor American, and how we as Chinese Americans similarly fall in that grey area. When I was writing that essay, I felt confident in my identity—although I felt that I was in between Chinese and American, I felt that I was closer than ever to bridging that gap. I had been studying Chinese for the past 6 years and I’d had so many meaningful conversations with my mom, aunts, uncles, and grandparents. I was set to study abroad at Peking University in Beijing and it was going to solidify my Chinese language skills even further, which is what I felt was the last thing missing for me to bridge that gap. I was going to be both Chinese and American. 
@@ -120,7 +125,7 @@ const portraitPage = () => {
                 Note: A few days after this essay was written, the Panda Express CEO stated that they had no plans to enter China and that the store that was reportedly opened is someone impersonating the brand.
             </p>
         </div>
-        </StyledFullBackground>
+        </CeciFullBackground>
         <div>
                 <Footer />
             </div>
