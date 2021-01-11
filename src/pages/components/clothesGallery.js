@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import React from 'react'
 
 import Gallery from '@browniebroke/gatsby-image-gallery'
-import '@browniebroke/gatsby-image-gallery/dist/style.css'
+import './style.css'
 
 const captions = [
     {
