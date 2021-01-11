@@ -53,5 +53,12 @@ module.exports = {
       path: path.join(__dirname, 'src', 'images', 'gallery'),
     }
   },
+  {
+    resolve: 'gatsby-plugin-heap',
+    options: {
+      appId: '3856154585',
+      enableOnDevMode: true
+    },
+  },
   ],
 }; 
