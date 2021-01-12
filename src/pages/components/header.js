@@ -18,7 +18,7 @@ export default function Header() {
     <div style={{ margin: `-2rem auto`, padding: `0 1rem` }}>
       <title>Johnson Lin</title>
       <header style={{ marginBottom: `1.5rem` }}>
-        <ul style={{ listStyle: `none`, float: `right`, marginRight: '10%', marginBottom: '60px'}}>
+        <ul style={{ listStyle: `none`, float: `right`, marginBottom: '60px'}}>
           <ListLink to="/"><p className={linkStyle.link} style={{ color:'black'}}>Home</p></ListLink>
           <ListLink to="/creative/"><p className={linkStyle.link} style={{ color:'#ffa500'}}>Creative Corner</p></ListLink>
         </ul>

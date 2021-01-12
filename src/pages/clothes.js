@@ -3,12 +3,11 @@ import CreativeHeader from "./components/creativeHeader.js"
 import Footer from "./components/footer.js"
 import Faces from "./thumbnails/Mac-Miller-FACES.png"
 import ClothesGallery from "./components/clothesGallery.js"
+import "./main.css"
 
 const mainStyle = {
     color: "#232129",
-    paddingLeft: "12%",
-    paddingRight: "13%",
-    paddingTop: "5%",
+    paddingTop: "150px",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
     fontSize: "18px",
     lineHeight: "1.5",
@@ -21,7 +20,7 @@ const clothesPage = () => {
             <CreativeHeader />
         </div>
         <main style={mainStyle}>
-            <p style={{paddingTop: "50px"}}>
+            <p>
                 I got into fashion at the end of my senior year in high school. I had friends who were already into streetwear and it was starting to rub off on me. At first, with a very typical high school male mindset, my goal was to dress better because I thought that would help me get a girlfriend. But, what I ended up falling in love with was the creativity and self expression that clothes allow you to express. What was originally feeling good about the outfit I was wearing and constantly checking myself out in glass windows, slowly turned into a strong, intimate connection with the clothes I chose to associate myself with. I've kept an outfit diary of every outfit I've worn at college and one of my favorite parts is being able to look back and see as I begin to hone in on an aesthetic, the "end goal" of self expression in fashion. 
             </p>
             <p>

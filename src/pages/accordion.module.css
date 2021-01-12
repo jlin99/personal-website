@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px){
+    .mobile {
+        margin-left: -5%;
+    }
+    .text {
+        margin-left: -6%;
+        margin-right: -30px;
+    }
+}

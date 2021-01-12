@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px){
+    .text {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (min-width: 769px){
+    .text {
+        padding-left: 16%;
+        padding-right: 20%;
+    }
+}

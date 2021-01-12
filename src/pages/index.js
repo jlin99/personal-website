@@ -15,13 +15,13 @@ import {
 } from 'react-accessible-accordion';
 import './accordion.css';
 import {CopyToClipboard} from 'react-copy-to-clipboard'
+import "./main.css"
+import mobileAccordion from "./accordion.module.css"
 
 // styles
 const pageStyles = {
   color: "#232129",
-  paddingLeft: "11%",
-  paddingRight: "11%",
-  paddingTop: "10%",
+  paddingTop: "100px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
   fontSize: "18px",
   lineHeight: "1.5",
@@ -145,7 +145,7 @@ const IndexPage = () => {
         I'm currently a senior at Vassar College. I'm a math major with a focus on statistics. I'm a self-taught coder with a deep interest in ML/AI. I previously interned as a Product Manager at Midgame, a small startup dedicated to bringing people closer together. I love making meaningful connections and having a tangible impact. My interests include fashion, video games, ultimate frisbee, and music. 
       </p>
       <Accordion allowMultipleExpanded allowZeroExpanded>
-          <AccordionItem>
+            <AccordionItem className={mobileAccordion.mobile}>
               <AccordionItemHeading>
                 <AccordionItemButton>
                   Find any of that interesting? Want some more details? 
@@ -158,14 +158,14 @@ const IndexPage = () => {
                 <p>
                   But after my internship at Midgame, I realized I was interested in beyond just that. I really enjoyed the aspect of identifying problems and designing solutions. It was exciting having the opportunity to think big and imagine a near future where my ideas might come to fruition. I loved talking to users and getting them to open up about some of their frustrations with a workflow. It's also why I was such an active student leader, serving as a Student Fellow (Vassar's version of an RA) and on multiple executive boards. It was extremely rewarding building a community and seeing that I made a positive impact on the people around you. I will always remember a member of Asian Students' Alliance (ASA) telling me that the event I had planned out was the first time they felt like they were a part of Vassar's Asian community and that they were very grateful for that.
                 </p>
-              <AccordionItem>
+              <AccordionItem className={mobileAccordion.mobile}>
                 <AccordionItemHeading>
                   <AccordionItemButton>
                     Want to hear the rest of my life story while you're here? 
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel>
-                  <AccordionItem>
+                  <AccordionItem className={mobileAccordion.text}>
                     <AccordionItemHeading>
                       <AccordionItemButton>
                         Are you sure? 

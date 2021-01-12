@@ -8,11 +8,10 @@ import portraitThumb1 from "./thumbnails/portraitThumbnail1.png"
 import portraitThumb2 from "./thumbnails/portraitThumbnail2.png"
 import fashionThumb from "./thumbnails/fashionShowThumbnail.jpg"
 import clothesThumb from "./thumbnails/fashion.jpeg"
+import "./main.css"
 
 const mainStyle = {
     color: "#232129",
-    paddingLeft: "11%",
-    paddingRight: "11%",
     paddingTop: "10%",
     fontFamily: "-apple-system, Roboto, sans-serif, serif",
     fontSize: "18px",

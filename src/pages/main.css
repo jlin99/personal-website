@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px){
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .fashionImg {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 769px){
+    main {
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+    .fashionImg {
+        width: 50%;
+    }
+}

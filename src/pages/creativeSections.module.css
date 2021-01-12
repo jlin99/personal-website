@@ -61,17 +61,19 @@
     margin: 5%;
     text-align: center;
 }
-.clothesLink:hover > .clothes{
-    display: inline;
-}
-.fashionShowLink:hover > .fashionShow{
-    display: inline;
-}
-.portraitLink:hover > .portrait{
-    display: inline;
-}
-.beatsLink:hover > .beats{
-    display: inline;
+@media screen and (min-width: 769px){
+    .clothesLink:hover > .clothes{
+        display: inline;
+    }
+    .fashionShowLink:hover > .fashionShow{
+        display: inline;
+    }
+    .portraitLink:hover > .portrait{
+        display: inline;
+    }
+    .beatsLink:hover > .beats{
+        display: inline;
+    }
 }
 .text {
     font-size: 36px;
